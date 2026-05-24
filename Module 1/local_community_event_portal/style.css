@@ -1,0 +1,305 @@
+/* Universal Selector */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+
+header {
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Navigation Styles */
+
+nav {
+    background-color: black;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Element Selector */
+
+h2 {
+    color: darkblue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ID Selector */
+
+#mainHeader {
+    background-color: darkblue;
+    padding: 20px;
+}
+
+/* Table Styles */
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Zebra Striping */
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+/* Image Styles */
+
+.eventImage {
+    width: 200px;
+    height: 150px;
+    border: 3px solid black;
+}
+
+/* Multi Column News Article Styles */
+
+.newsArticle {
+
+    column-count: 2;
+
+    column-gap: 30px;
+
+    column-rule: 1px solid gray;
+
+    padding: 20px;
+
+    margin: 30px;
+
+    text-align: justify;
+
+}
+
+/* Caption Styles */
+
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+
+form {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+/* Event Card Styles */
+
+.eventCard {
+
+    border: 3px solid black;
+
+    padding: 20px;
+
+    margin: 30px;
+
+    background-color: white;
+
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Form Field Focus Styles */
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    outline: 3px solid blue;
+
+}
+
+/* Button Styles */
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+/* Output Styles */
+
+output {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Visibility Hidden Example */
+
+.hiddenBox {
+
+    visibility: hidden;
+
+}
+
+/* Display None Example */
+
+.noneBox {
+
+    display: none;
+
+}
+
+/* Video Styles */
+
+video {
+    border: 3px solid black;
+    margin-top: 20px;
+}
+
+/* Message Styles */
+
+#videoMessage {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#locationResult {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+/* Responsive Layout Styles */
+
+main {
+
+    width: 90%;
+
+    margin: auto;
+
+}
+
+/* Responsive Images */
+
+.eventImage {
+
+    width: 20vw;
+
+    height: 20vh;
+
+}
+
+/* Responsive Video */
+
+video {
+
+    width: 80%;
+
+    height: auto;
+
+}
+
+/* Flexbox Navigation Layout */
+
+nav {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+}
+
+/* Media Query for Small Screens */
+
+@media screen and (max-width: 768px) {
+
+    nav {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    nav a {
+
+        display: block;
+
+        margin: 10px 0;
+
+    }
+
+    .eventImage {
+
+        width: 150px;
+
+        height: 100px;
+
+    }
+
+    h1 {
+
+        font-size: 24px;
+
+    }
+
+    h2 {
+
+        font-size: 20px;
+
+    }
+
+    body {
+
+        font-size: 14px;
+
+    }
+
+    form {
+
+        width: 90%;
+
+    }
+
+    .newsArticle {
+
+        column-count: 1;
+
+    }
+
+}
