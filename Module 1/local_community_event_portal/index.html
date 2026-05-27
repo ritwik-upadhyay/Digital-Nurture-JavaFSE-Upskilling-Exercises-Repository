@@ -13,7 +13,112 @@
 
     <style>
         body {
+
             font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+        header {
+
+            background-color: #f2f2f2;
+
+            padding: 20px;
+
+        }
+
+        nav a {
+
+            margin-right: 15px;
+
+            text-decoration: none;
+
+            color: black;
+
+            font-weight: bold;
+
+        }
+
+        form {
+
+            border: 1px solid #ccc;
+
+            padding: 20px;
+
+            margin: 20px 0;
+
+            border-radius: 10px;
+
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+
+            display: block;
+
+            margin-top: 10px;
+
+            margin-bottom: 15px;
+
+            padding: 10px;
+
+            width: 100%;
+
+            max-width: 500px;
+
+        }
+
+        table {
+
+            margin: auto;
+
+        }
+
+        .eventImage {
+
+            width: 250px;
+
+            height: 180px;
+
+            border-radius: 10px;
+
+        }
+
+        .eventCard {
+
+            padding: 10px;
+
+            text-align: center;
+
+        }
+
+        .hiddenBox {
+
+            visibility: hidden;
+
+        }
+
+        .noneBox {
+
+            display: none;
+
+        }
+
+        #eventContainer {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 20px;
+
+            margin-top: 20px;
+
         }
     </style>
 
@@ -21,12 +126,16 @@
 
 <body>
 
-    <!-- Navigation -->
+    <!-- =========================
+    HEADER
+    ========================= -->
 
     <header id="mainHeader">
+
         <h1 style="color: red;">
             Local Community Event Portal
         </h1>
+
         <nav>
 
             <a href="#home">Home</a>
@@ -40,17 +149,23 @@
             <a href="help.html" target="_blank">Help</a>
 
         </nav>
+
     </header>
 
-    <!-- Main -->
+
+    <!-- =========================
+    MAIN
+    ========================= -->
 
     <main>
 
-        <!-- Home Section -->
+        <!-- =========================
+        HOME SECTION
+        ========================= -->
 
         <section id="home">
 
-            <!-- Welcome Banner -->
+            <!-- WELCOME BANNER -->
 
             <div id="welcomeBanner" style="background-color: blue; color: white; padding: 20px; text-align: center;">
 
@@ -78,11 +193,14 @@
 
             <br><br>
 
-            <!-- Image Gallery -->
+
+            <!-- IMAGE GALLERY -->
 
             <table>
 
-                <caption>Past Community Events</caption>
+                <caption>
+                    <h2>Past Community Events</h2>
+                </caption>
 
                 <tr>
 
@@ -144,7 +262,10 @@
 
         </section>
 
-        <!-- Community Bulletin Section -->
+
+        <!-- =========================
+        COMMUNITY BULLETIN
+        ========================= -->
 
         <section>
 
@@ -152,27 +273,22 @@
 
             <div class="newsArticle">
 
-                The city council has announced several new community programs
-                for residents this summer. Events include cultural festivals,
-                health camps, music performances, educational workshops,
+                The city council has announced several new community
+                programs for residents this summer.
+
+                Events include cultural festivals, health camps,
+                music performances, educational workshops,
                 and environmental awareness drives.
 
                 Residents are encouraged to participate in local activities
-                to strengthen community engagement and improve neighborhood
-                relationships. Volunteers are also invited to assist in
-                organizing public events and awareness campaigns.
-
-                Special weekend programs will be conducted for children
-                and senior citizens. Food fairs and charity events are
-                expected to attract large public participation this year.
-
-                The council has also introduced online registration facilities
-                through the Local Community Event Portal for easier access
-                to event information and participation.
+                to strengthen community engagement.
 
             </div>
 
         </section>
+
+
+        <!-- HIDDEN BOXES -->
 
         <div class="hiddenBox">
             This box is hidden using visibility:hidden
@@ -182,11 +298,54 @@
             This box is hidden using display:none
         </div>
 
-        <!-- Events Section -->
+
+        <!-- =========================
+        EVENTS SECTION
+        ========================= -->
 
         <section id="events">
 
-            <!-- Event Registration Form -->
+            <h1>Community Events</h1>
+
+
+            <!-- =========================
+            FILTER EVENTS
+            ========================= -->
+
+            <label for="categoryFilter">
+                Filter Events By Category
+            </label>
+
+            <select id="categoryFilter">
+
+                <option value="All">All</option>
+
+                <option value="Music">Music</option>
+
+                <option value="Food">Food</option>
+
+                <option value="Education">Education</option>
+
+            </select>
+
+
+            <!-- =========================
+            SEARCH EVENTS
+            ========================= -->
+
+            <input type="text" id="searchInput" placeholder="Search events by name...">
+
+
+            <!-- =========================
+            DYNAMIC EVENT CONTAINER
+            ========================= -->
+
+            <div id="eventContainer"></div>
+
+
+            <!-- =========================
+            EVENT REGISTRATION FORM
+            ========================= -->
 
             <form onsubmit="showMessage(); return false;">
 
@@ -208,13 +367,21 @@
 
                 <select id="preferredEvent" onchange="savePreference()" required>
 
-                    <option value="">Select Event</option>
+                    <option value="">
+                        Select Event
+                    </option>
 
-                    <option value="Music Festival">Music Festival</option>
+                    <option value="Music Festival">
+                        Music Festival
+                    </option>
 
-                    <option value="Food Fair">Food Fair</option>
+                    <option value="Food Fair">
+                        Food Fair
+                    </option>
 
-                    <option value="Book Reading">Book Reading</option>
+                    <option value="Book Reading">
+                        Book Reading
+                    </option>
 
                 </select>
 
@@ -223,22 +390,21 @@
                 <textarea rows="5" placeholder="Enter your message" required></textarea>
 
                 <button type="submit">
-
                     Register
-
                 </button>
 
                 <button type="button" onclick="clearPreferences()">
-
                     Clear Preferences
-
                 </button>
 
                 <output id="confirmationMessage"></output>
 
             </form>
 
-            <!-- Event Feedback Form -->
+
+            <!-- =========================
+            FEEDBACK FORM
+            ========================= -->
 
             <form>
 
@@ -254,13 +420,21 @@
 
                 <select id="eventType" onchange="showFee()">
 
-                    <option value="">Choose Event</option>
+                    <option value="">
+                        Choose Event
+                    </option>
 
-                    <option value="100">Music Festival</option>
+                    <option value="100">
+                        Music Festival
+                    </option>
 
-                    <option value="200">Food Fair</option>
+                    <option value="200">
+                        Food Fair
+                    </option>
 
-                    <option value="150">Book Reading</option>
+                    <option value="150">
+                        Book Reading
+                    </option>
 
                 </select>
 
@@ -280,16 +454,17 @@
                 </p>
 
                 <button type="button" onclick="showConfirmation()">
-
                     Submit Feedback
-
                 </button>
 
                 <p id="feedbackConfirmation"></p>
 
             </form>
 
-            <!-- Video Invite -->
+
+            <!-- =========================
+            VIDEO SECTION
+            ========================= -->
 
             <center>
 
@@ -307,19 +482,23 @@
 
             </center>
 
-            <br><br>
 
-            <!-- Event Image -->
+            <!-- =========================
+            EVENT IMAGE
+            ========================= -->
 
             <center>
 
-                <img src="event4.jpeg" alt="Community Event" ondblclick="enlargeImage(this)">
+                <img src="event4.jpeg" alt="Community Event" ondblclick="enlargeImage(this)" width="400">
 
             </center>
 
         </section>
 
-        <!-- Geolocation Section -->
+
+        <!-- =========================
+        LOCATION SECTION
+        ========================= -->
 
         <section id="location">
 
@@ -339,7 +518,10 @@
 
         </section>
 
-        <!-- Contact Section -->
+
+        <!-- =========================
+        CONTACT SECTION
+        ========================= -->
 
         <section id="contact">
 
@@ -349,9 +531,13 @@
 
                 <address>
 
-                    Email: community@portal.com<br>
+                    Email: community@portal.com
 
-                    Office: Local City Council Office<br>
+                    <br>
+
+                    Office: Local City Council Office
+
+                    <br>
 
                     Telephone: +91 9876543210
 
@@ -361,221 +547,43 @@
 
         </section>
 
+        <button id="registerBtn">
+            Register Event
+        </button>
+
+        <button id="hideEventsBtn">
+            Hide Events
+        </button>
+
+        <button id="showEventsBtn">
+            Show Events
+        </button>
+
     </main>
 
-    <!-- Footer -->
+
+    <!-- =========================
+    FOOTER
+    ========================= -->
 
     <footer>
 
-        <p>&copy; 2026 Local Community Council</p>
+        <center>
+
+            <p>
+                &copy; 2026 Local Community Council
+            </p>
+
+        </center>
 
     </footer>
 
-    <script>
 
-        function showMessage() {
+    <!-- =========================
+    JAVASCRIPT FILE
+    ========================= -->
 
-            document.getElementById("confirmationMessage").innerHTML =
-
-                "Registration submitted successfully!";
-
-        }
-
-        function validatePhone() {
-
-            let phone = document.getElementById("phone").value;
-
-            if (phone.length != 10) {
-
-                document.getElementById("phoneMessage").innerHTML =
-
-                    "Invalid phone number";
-
-            }
-
-            else {
-
-                document.getElementById("phoneMessage").innerHTML =
-
-                    "Valid phone number";
-
-            }
-
-        }
-
-        function showFee() {
-
-            let fee = document.getElementById("eventType").value;
-
-            document.getElementById("eventFee").innerHTML =
-
-                "Event Fee: ₹" + fee;
-
-        }
-
-        function showConfirmation() {
-
-            document.getElementById("feedbackConfirmation").innerHTML =
-
-                "Feedback submitted successfully!";
-
-        }
-
-        function enlargeImage(image) {
-
-            image.style.width = "400px";
-
-        }
-
-        function countCharacters() {
-
-            let text = document.getElementById("feedback").value;
-
-            document.getElementById("charCount").innerHTML =
-
-                text.length;
-
-        }
-
-        function videoReady() {
-
-            document.getElementById("videoMessage").innerHTML =
-
-                "Video ready to play";
-
-        }
-
-        window.onbeforeunload = function () {
-
-            return "Your form is not completed. Are you sure you want to leave?";
-
-        };
-
-        function savePreference() {
-
-            let selectedEvent =
-
-                document.getElementById("preferredEvent").value;
-
-            localStorage.setItem(
-
-                "preferredEvent",
-
-                selectedEvent
-
-            );
-
-            sessionStorage.setItem(
-
-                "sessionEvent",
-
-                selectedEvent
-
-            );
-
-        }
-
-        window.onload = function () {
-
-            let savedEvent =
-
-                localStorage.getItem("preferredEvent");
-
-            if (savedEvent) {
-
-                document.getElementById("preferredEvent").value =
-
-                    savedEvent;
-
-            }
-
-        };
-
-        function clearPreferences() {
-
-            localStorage.clear();
-
-            sessionStorage.clear();
-
-            document.getElementById("preferredEvent").value = "";
-
-            alert("Preferences Cleared");
-
-        }
-
-        function findLocation() {
-
-            if (navigator.geolocation) {
-
-                navigator.geolocation.getCurrentPosition(
-
-                    showPosition,
-
-                    showError,
-
-                    {
-                        enableHighAccuracy: true,
-                        timeout: 5000,
-                        maximumAge: 0
-                    }
-
-                );
-
-            }
-
-            else {
-
-                document.getElementById("locationResult").innerHTML =
-
-                    "Geolocation is not supported by this browser.";
-
-            }
-
-        }
-
-        function showPosition(position) {
-
-            document.getElementById("locationResult").innerHTML =
-
-                "Latitude: " +
-                position.coords.latitude +
-
-                "<br>Longitude: " +
-                position.coords.longitude;
-
-        }
-
-        function showError(error) {
-
-            switch (error.code) {
-
-                case error.PERMISSION_DENIED:
-
-                    document.getElementById("locationResult").innerHTML =
-
-                        "User denied the request for Geolocation.";
-
-                    break;
-
-                case error.TIMEOUT:
-
-                    document.getElementById("locationResult").innerHTML =
-
-                        "Location request timed out.";
-
-                    break;
-
-                default:
-
-                    document.getElementById("locationResult").innerHTML =
-
-                        "An unknown error occurred.";
-
-            }
-
-        }
-
-    </script>
+    <script src="main.js"></script>
 
 </body>
 
