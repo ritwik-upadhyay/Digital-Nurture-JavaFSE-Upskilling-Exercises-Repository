@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap Exercises</title>
+
+    <!-- Bootstrap CDN -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <div class="container mt-5 mb-5">
+
+        <!-- =========================
+        PAGE TITLE
+        ========================= -->
+
+        <h1 class="text-center text-primary mb-5">
+
+            Bootstrap Complete Exercises
+
+        </h1>
+
+
+        <!-- =========================
+        EXERCISE 3.1
+        RESPONSIVE GRID
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 3.1:
+            Responsive Grid Layout
+
+        </h2>
+
+        <div class="row g-4 mb-5">
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card p-3 shadow">
+
+                    <h3>Music Festival</h3>
+
+                    <p>
+                        Community Music Event
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card p-3 shadow">
+
+                    <h3>Food Fair</h3>
+
+                    <p>
+                        Annual Food Celebration
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card p-3 shadow">
+
+                    <h3>Book Reading</h3>
+
+                    <p>
+                        Educational Community Event
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 4.1
+        SIDEBAR LAYOUT
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 4.1:
+            Sidebar and Content Layout
+
+        </h2>
+
+        <div class="row mb-5">
+
+            <div class="col-md-3">
+
+                <div class="bg-dark text-white p-4 rounded shadow">
+
+                    <h3>Sidebar</h3>
+
+                    <ul>
+
+                        <li>Home</li>
+
+                        <li>Events</li>
+
+                        <li>Contact</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="bg-light p-4 rounded shadow">
+
+                    <h2>Main Content</h2>
+
+                    <p>
+
+                        Bootstrap grid layout example.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 4.2
+        FOUR COLUMNS
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 4.2:
+            Four Equal Columns
+
+        </h2>
+
+        <div class="row text-center g-4 mb-5">
+
+            <div class="col-sm-3">
+
+                <div class="bg-primary text-white p-4 rounded shadow">
+
+                    Column 1
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-3">
+
+                <div class="bg-success text-white p-4 rounded shadow">
+
+                    Column 2
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-3">
+
+                <div class="bg-warning p-4 rounded shadow">
+
+                    Column 3
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-3">
+
+                <div class="bg-danger text-white p-4 rounded shadow">
+
+                    Column 4
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 5.1
+        ALIGNMENT
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 5.1:
+            Alignment Using Flex Classes
+
+        </h2>
+
+        <div class="row justify-content-center align-items-center bg-light mb-5" style="height: 250px;">
+
+            <div class="col-md-4">
+
+                <div class="bg-primary text-white p-4 rounded text-center shadow">
+
+                    Centered Content
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 5.2
+        REORDERING
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 5.2:
+            Reordering Columns
+
+        </h2>
+
+        <div class="row text-center g-4 mb-5">
+
+            <div class="col-md-6 order-md-2">
+
+                <div class="bg-success text-white p-5 rounded shadow">
+
+                    First on Mobile
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 order-md-1">
+
+                <div class="bg-warning p-5 rounded shadow">
+
+                    First on Desktop
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 6.1
+        FLEX NAVBAR
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 6.1:
+            Responsive Flexbox Navbar
+
+        </h2>
+
+        <nav class="d-flex flex-column flex-md-row
+            justify-content-between align-items-center
+            bg-dark p-4 rounded mb-5">
+
+            <h3 class="text-white">
+
+                Community Portal
+
+            </h3>
+
+            <div class="d-flex flex-column flex-md-row gap-3">
+
+                <a href="#" class="text-white text-decoration-none">
+
+                    Home
+
+                </a>
+
+                <a href="#" class="text-white text-decoration-none">
+
+                    Events
+
+                </a>
+
+                <a href="#" class="text-white text-decoration-none">
+
+                    Contact
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- =========================
+        EXERCISE 6.2
+        FLEX CARD
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 6.2:
+            Flex Card Layout
+
+        </h2>
+
+        <div class="card p-4 shadow mb-5">
+
+            <div class="d-flex justify-content-between align-items-center">
+
+                <div>
+
+                    <h3>Music Festival</h3>
+
+                    <p class="mb-0">
+
+                        Community Event 2026
+
+                    </p>
+
+                </div>
+
+                <button class="btn btn-primary">
+
+                    Register
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 7.1
+        TYPOGRAPHY
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 7.1:
+            Typography Utilities
+
+        </h2>
+
+        <div class="bg-light p-5 rounded shadow mb-5">
+
+            <h1 class="display-1 text-primary">
+
+                Community Events
+
+            </h1>
+
+            <p class="lead">
+
+                Welcome to the annual event portal.
+
+            </p>
+
+            <p class="text-muted">
+
+                Registrations close soon.
+
+            </p>
+
+            <p class="fw-bold">
+
+                Featured Event: Music Festival
+
+            </p>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 7.2
+        TEXT TRANSFORM
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 7.2:
+            Text Transformation
+
+        </h2>
+
+        <div class="bg-light p-5 rounded shadow mb-5">
+
+            <p class="text-uppercase">
+
+                uppercase text
+
+            </p>
+
+            <p class="text-lowercase">
+
+                LOWERCASE TEXT
+
+            </p>
+
+            <p class="text-capitalize">
+
+                capitalize every word
+
+            </p>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 8.1
+        REGISTRATION FORM
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 8.1:
+            Registration Form
+
+        </h2>
+
+        <div class="card shadow p-4 mb-5">
+
+            <form>
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+
+                        Full Name
+
+                    </label>
+
+                    <input type="text" class="form-control">
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+
+                        Email
+
+                    </label>
+
+                    <input type="email" class="form-control">
+
+                </div>
+
+                <div class="input-group mb-3">
+
+                    <span class="input-group-text">
+
+                        @
+
+                    </span>
+
+                    <input type="text" class="form-control" placeholder="Username">
+
+                </div>
+
+                <div class="form-check mb-3">
+
+                    <input type="checkbox" class="form-check-input" id="check1">
+
+                    <label class="form-check-label" for="check1">
+
+                        Accept Terms
+
+                    </label>
+
+                </div>
+
+                <button class="btn btn-primary">
+
+                    Register
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 8.2
+        LOGIN FORM
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 8.2:
+            Login Form
+
+        </h2>
+
+        <div class="card shadow p-4 mb-5">
+
+            <form>
+
+                <div class="form-floating mb-3">
+
+                    <input type="email" class="form-control" id="emailInput" placeholder="Email">
+
+                    <label for="emailInput">
+
+                        Email Address
+
+                    </label>
+
+                </div>
+
+                <div class="form-floating mb-3">
+
+                    <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+
+                    <label for="passwordInput">
+
+                        Password
+
+                    </label>
+
+                </div>
+
+                <button class="btn btn-success">
+
+                    Login
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 9.1
+        BUTTONS
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 9.1:
+            Bootstrap Buttons
+
+        </h2>
+
+        <div class="card shadow p-4 mb-5">
+
+            <button class="btn btn-primary m-1">
+                Primary
+            </button>
+
+            <button class="btn btn-secondary m-1">
+                Secondary
+            </button>
+
+            <button class="btn btn-success m-1">
+                Success
+            </button>
+
+            <button class="btn btn-danger m-1">
+                Danger
+            </button>
+
+            <button class="btn btn-outline-primary m-1">
+                Outline
+            </button>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 9.2
+        BUTTON GROUP
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 9.2:
+            Button Groups
+
+        </h2>
+
+        <div class="card shadow p-4 mb-5">
+
+            <div class="btn-group">
+
+                <button class="btn btn-primary">
+
+                    Left
+
+                </button>
+
+                <button class="btn btn-success">
+
+                    Middle
+
+                </button>
+
+                <button class="btn btn-danger">
+
+                    Right
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 10.1
+        NAVBAR
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 10.1:
+            Responsive Navbar
+
+        </h2>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded shadow mb-5">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">
+
+                    Community Portal
+
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav me-auto">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link active" href="#">
+
+                                Home
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="#">
+
+                                Events
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                    <form class="d-flex">
+
+                        <input class="form-control me-2" type="search" placeholder="Search">
+
+                        <button class="btn btn-outline-light">
+
+                            Search
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- =========================
+        EXERCISE 10.2
+        NAV TABS
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 10.2:
+            Nav Tabs & Pills
+
+        </h2>
+
+        <div class="card shadow p-4 mb-5">
+
+            <ul class="nav nav-tabs mb-4">
+
+                <li class="nav-item">
+
+                    <a class="nav-link active" href="#">
+
+                        Music
+
+                    </a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#">
+
+                        Food
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+            <ul class="nav nav-pills">
+
+                <li class="nav-item">
+
+                    <a class="nav-link active" href="#">
+
+                        Dashboard
+
+                    </a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#">
+
+                        Profile
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 11.1
+        PROFILE CARD
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 11.1:
+            Profile Card
+
+        </h2>
+
+        <div class="card shadow mb-5" style="width: 22rem;">
+
+            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Profile Image">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+
+                    Ritwik Upadhyay
+
+                </h5>
+
+                <p class="card-text">
+
+                    Frontend Developer and Community Organizer.
+
+                </p>
+
+                <a href="#" class="btn btn-primary">
+
+                    View Profile
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 11.2
+        MEDIA OBJECT
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 11.2:
+            Media Object Layout
+
+        </h2>
+
+        <div class="card shadow p-4 mb-5">
+
+            <div class="d-flex align-items-start">
+
+                <img src="https://via.placeholder.com/120" class="rounded me-4" alt="Event Image">
+
+                <div>
+
+                    <h4>
+
+                        Community Workshop
+
+                    </h4>
+
+                    <p>
+
+                        Learn Bootstrap with practical projects
+                        and responsive layouts.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 12.1
+        SPACING UTILITIES
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 12.1:
+            Margin & Padding Utilities
+
+        </h2>
+
+        <div class="bg-primary text-white m-3 p-2 rounded">
+
+            Box with margin (m-3) and padding (p-2)
+
+        </div>
+
+        <div class="bg-success text-white mt-4 py-5 px-4 rounded mb-5">
+
+            Box with top margin (mt-4)
+            and vertical padding (py-5)
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 12.2
+        PRICING SECTION
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 12.2:
+            Pricing Section
+
+        </h2>
+
+        <div class="row g-4 mb-5">
+
+            <div class="col-md-4">
+
+                <div class="card text-center shadow p-4 h-100">
+
+                    <h3 class="mb-3">
+
+                        Basic
+
+                    </h3>
+
+                    <h1 class="text-primary mb-4">
+
+                        ₹499
+
+                    </h1>
+
+                    <p class="mb-3">
+
+                        Access to community events
+
+                    </p>
+
+                    <button class="btn btn-outline-primary mt-3">
+
+                        Choose Plan
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card text-center shadow p-4 h-100 border-primary">
+
+                    <h3 class="mb-3">
+
+                        Standard
+
+                    </h3>
+
+                    <h1 class="text-success mb-4">
+
+                        ₹999
+
+                    </h1>
+
+                    <p class="mb-3">
+
+                        Event access + workshops
+
+                    </p>
+
+                    <button class="btn btn-success mt-3">
+
+                        Choose Plan
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card text-center shadow p-4 h-100">
+
+                    <h3 class="mb-3">
+
+                        Premium
+
+                    </h3>
+
+                    <h1 class="text-danger mb-4">
+
+                        ₹1499
+
+                    </h1>
+
+                    <p class="mb-3">
+
+                        All access + VIP seating
+
+                    </p>
+
+                    <button class="btn btn-danger mt-3">
+
+                        Choose Plan
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 13.1
+        COLORS & BACKGROUNDS
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 13.1:
+            Dashboard using Colors & Backgrounds
+
+        </h2>
+
+        <div class="row g-4 mb-5">
+
+            <div class="col-md-3">
+
+                <div class="bg-primary text-white p-4 rounded shadow text-center">
+
+                    <h3>120</h3>
+
+                    <p class="mb-0">
+
+                        Total Events
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="bg-success text-white p-4 rounded shadow text-center">
+
+                    <h3>85</h3>
+
+                    <p class="mb-0">
+
+                        Registrations
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="bg-warning text-dark p-4 rounded shadow text-center">
+
+                    <h3>12</h3>
+
+                    <p class="mb-0">
+
+                        Pending Events
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="bg-danger text-white p-4 rounded shadow text-center">
+
+                    <h3>5</h3>
+
+                    <p class="mb-0">
+
+                        Cancelled Events
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+        EXERCISE 13.2
+        GRADIENT BACKGROUND
+        ========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 13.2:
+            Gradient Background
+
+        </h2>
+
+        <div class="bg-dark bg-gradient text-white p-5 rounded shadow mb-5">
+
+            <h2 class="fw-bold">
+
+                Community Dashboard
+
+            </h2>
+
+            <p class="lead">
+
+                Welcome to the Bootstrap gradient section.
+
+            </p>
+
+            <p>
+
+                This section uses:
+
+            </p>
+
+            <ul>
+
+                <li>bg-dark</li>
+
+                <li>bg-gradient</li>
+
+                <li>text-white</li>
+
+            </ul>
+
+            <button class="btn btn-light mt-3">
+
+                Explore Events
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+    <!-- =========================
+EXERCISE 14.1
+DISPLAY & VISIBILITY
+========================= -->
+
+    <h2 class="mb-4">
+
+        Exercise 14.1:
+        Display & Visibility Utilities
+
+    </h2>
+
+    <div class="card shadow p-4 mb-5">
+
+        <!-- HIDDEN ON MOBILE -->
+
+        <div class="d-none d-md-block bg-primary text-white p-4 rounded mb-4">
+
+            This section is hidden on mobile
+            and visible on tablets and larger screens.
+
+        </div>
+
+        <!-- FLEX ONLY ON LARGE SCREENS -->
+
+        <div class="d-none d-lg-flex justify-content-between align-items-center
+        bg-dark text-white p-4 rounded">
+
+            <div>
+
+                <h4>
+
+                    Large Screen Flex Layout
+
+                </h4>
+
+                <p class="mb-0">
+
+                    Visible only on large screens and above.
+
+                </p>
+
+            </div>
+
+            <button class="btn btn-light">
+
+                Explore
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+EXERCISE 14.2
+RESPONSIVE SIDEBAR
+========================= -->
+
+    <h2 class="mb-4">
+
+        Exercise 14.2:
+        Responsive Sidebar
+
+    </h2>
+
+    <div class="row mb-5">
+
+        <!-- SIDEBAR -->
+
+        <div class="col-md-3 d-none d-md-block">
+
+            <div class="bg-dark text-white p-4 rounded shadow h-100">
+
+                <h4>
+
+                    Sidebar Menu
+
+                </h4>
+
+                <ul class="list-unstyled mt-3">
+
+                    <li class="mb-2">
+                        Dashboard
+                    </li>
+
+                    <li class="mb-2">
+                        Profile
+                    </li>
+
+                    <li class="mb-2">
+                        Events
+                    </li>
+
+                    <li class="mb-2">
+                        Settings
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- MAIN CONTENT -->
+
+        <div class="col-12 col-md-9">
+
+            <div class="bg-light p-5 rounded shadow">
+
+                <h3>
+
+                    Main Content Area
+
+                </h3>
+
+                <p>
+
+                    The sidebar appears only on
+                    tablets and larger devices using:
+
+                </p>
+
+                <ul>
+
+                    <li>d-none</li>
+
+                    <li>d-md-block</li>
+
+                </ul>
+
+                <p class="mb-0">
+
+                    On mobile screens,
+                    only this content section is visible.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+EXERCISE 15.1
+BORDERS & ROUNDED IMAGE
+========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 15.1:
+            Borders and Rounded Circle Image
+
+        </h2>
+
+        <div class="card shadow p-5 mb-5 text-center">
+
+            <img src="https://via.placeholder.com/200" alt="Profile"
+                class="border border-primary border-3 rounded-circle mb-4 mx-auto">
+
+            <h3>
+
+                Community Member
+
+            </h3>
+
+            <p class="text-muted">
+
+                Image styled using Bootstrap border utilities.
+
+            </p>
+
+        </div>
+
+
+        <!-- =========================
+EXERCISE 15.2
+SHADOWS & ROUNDED PILL
+========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 15.2:
+            Shadows and Rounded Pill Card
+
+        </h2>
+
+        <div class="card shadow-lg p-5 rounded-pill mb-5 border-0">
+
+            <div class="d-flex justify-content-between align-items-center">
+
+                <div>
+
+                    <h3 class="mb-2">
+
+                        Premium Membership
+
+                    </h3>
+
+                    <p class="mb-0 text-muted">
+
+                        Access all premium workshops and events.
+
+                    </p>
+
+                </div>
+
+                <button class="btn btn-primary rounded-pill px-4">
+
+                    Join Now
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- =========================
+EXERCISE 16.1
+FIXED FOOTER
+========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 16.1:
+            Fixed Footer
+
+        </h2>
+
+        <div class="card shadow p-5 mb-5">
+
+            <p>
+
+                Scroll the page to see the fixed footer
+                staying at the bottom of the screen.
+
+            </p>
+
+        </div>
+
+        <!-- FIXED FOOTER -->
+
+        <footer class="position-fixed bottom-0 start-0 w-100
+    bg-dark text-white text-center p-3 shadow-lg">
+
+            Bootstrap Fixed Footer Example
+
+        </footer>
+
+
+        <!-- =========================
+EXERCISE 16.2
+POSITION UTILITIES
+========================= -->
+
+        <h2 class="mb-4 mt-5">
+
+            Exercise 16.2:
+            Relative & Absolute Positioning
+
+        </h2>
+
+        <div class="card shadow p-5 mb-5 text-center">
+
+            <div class="position-relative d-inline-block">
+
+                <!-- IMAGE -->
+
+                <img src="https://via.placeholder.com/300x200" alt="Event Image" class="rounded shadow">
+
+                <!-- BADGE -->
+
+                <span class="position-absolute top-0 start-100
+            translate-middle badge rounded-pill bg-danger">
+
+                    New
+
+                </span>
+
+            </div>
+
+            <h3 class="mt-4">
+
+                Community Event Banner
+
+            </h3>
+
+            <p class="text-muted">
+
+                Badge placed using
+                position-relative and position-absolute.
+
+            </p>
+
+        </div>
+
+        <!-- =========================
+
+EXERCISE 17.1
+
+SOCIAL MEDIA ICONS
+
+========================= -->
+
+        <h2 class="mb-4 mt-5">
+
+            Exercise 17.1:
+
+            Social Media Icons Footer
+
+        </h2>
+
+        <footer class="bg-dark text-white text-center p-5 rounded shadow mb-5">
+
+            <h3 class="mb-4">
+
+                Follow Us
+
+            </h3>
+
+            <div class="d-flex justify-content-center gap-4 fs-2">
+
+                <!-- FACEBOOK -->
+
+                <a href="#" class="text-white">
+
+                    <i class="bi bi-facebook"></i>
+
+                </a>
+
+                <!-- INSTAGRAM -->
+
+                <a href="#" class="text-white">
+
+                    <i class="bi bi-instagram"></i>
+
+                </a>
+
+                <!-- TWITTER -->
+
+                <a href="#" class="text-white">
+
+                    <i class="bi bi-twitter-x"></i>
+
+                </a>
+
+                <!-- YOUTUBE -->
+
+                <a href="#" class="text-white">
+
+                    <i class="bi bi-youtube"></i>
+
+                </a>
+
+            </div>
+
+        </footer>
+
+        <!-- =========================
+
+EXERCISE 17.2
+
+ICON ONLY BUTTONS
+
+========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 17.2:
+
+            Icon Only Buttons
+
+        </h2>
+
+        <div class="card shadow p-5 mb-5 text-center">
+
+            <div class="d-flex justify-content-center gap-3">
+
+                <!-- SEARCH BUTTON -->
+
+                <button class="btn btn-primary">
+
+                    <i class="bi bi-search"></i>
+
+                </button>
+
+                <!-- HEART BUTTON -->
+
+                <button class="btn btn-danger">
+
+                    <i class="bi bi-heart-fill"></i>
+
+                </button>
+
+                <!-- DOWNLOAD BUTTON -->
+
+                <button class="btn btn-success">
+
+                    <i class="bi bi-download"></i>
+
+                </button>
+
+                <!-- SETTINGS BUTTON -->
+
+                <button class="btn btn-dark">
+
+                    <i class="bi bi-gear-fill"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- =========================
+EXERCISE 18.1
+BOOTSTRAP MODAL
+========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 18.1:
+            Modal Popup
+
+        </h2>
+
+        <div class="card shadow p-5 mb-5 text-center">
+
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eventModal">
+
+                Open Modal
+
+            </button>
+
+        </div>
+
+        <!-- MODAL -->
+
+        <div class="modal fade" id="eventModal" tabindex="-1">
+
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+
+                    <!-- MODAL HEADER -->
+
+                    <div class="modal-header">
+
+                        <h5 class="modal-title">
+
+                            Community Event
+
+                        </h5>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal">
+
+                        </button>
+
+                    </div>
+
+                    <!-- MODAL BODY -->
+
+                    <div class="modal-body">
+
+                        Welcome to the Bootstrap Modal Example.
+                        This popup uses Bootstrap JavaScript plugins.
+
+                    </div>
+
+                    <!-- MODAL FOOTER -->
+
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+
+                            Close
+
+                        </button>
+
+                        <button type="button" class="btn btn-primary">
+
+                            Save Changes
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+EXERCISE 18.2
+BOOTSTRAP ACCORDION
+========================= -->
+
+        <h2 class="mb-4">
+
+            Exercise 18.2:
+            Accordion Component
+
+        </h2>
+
+        <div class="accordion mb-5 shadow" id="eventAccordion">
+
+            <!-- ACCORDION ITEM 1 -->
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne">
+
+                        Music Festival
+
+                    </button>
+
+                </h2>
+
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#eventAccordion">
+
+                    <div class="accordion-body">
+
+                        The Music Festival includes live performances,
+                        workshops, and networking sessions.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ACCORDION ITEM 2 -->
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo">
+
+                        Food Fair
+
+                    </button>
+
+                </h2>
+
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
+
+                    <div class="accordion-body">
+
+                        The Food Fair showcases cuisines,
+                        cooking competitions, and tasting events.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ACCORDION ITEM 3 -->
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree">
+
+                        Book Reading
+
+                    </button>
+
+                </h2>
+
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
+
+                    <div class="accordion-body">
+
+                        Educational talks, author interactions,
+                        and reading sessions are included.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
